@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap_main" prefHeight="403.0" prefWidth="478" style="-fx-background-color: #38383f;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.example.messengerclientvideo.HelloController">
+    <children>
+        <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="30" layoutY="70" prefHeight="256" prefWidth="418">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248.0" prefWidth="403.0" />
+            </content>
+        </ScrollPane>
+        <Label alignment="CENTER" layoutX="114" layoutY="26" prefHeight="54.0" prefWidth="478.0" style="-fx-background-color: #38383f; -fx-text-fill: #b9b9bc;" text="WittCode's Messenger" AnchorPane.bottomAnchor="342.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="23">
+
+                </Font>
+            </font>
+        </Label>
+        <HBox layoutY="335.0" prefHeight="68.0" prefWidth="478.0" style="-fx-background-color: #38383f;">
+            <children>
+                <TextField fx:id="tf_message" prefHeight="26" prefWidth="374.0" style="-fx-background-radius: 20;" />
+                <Button fx:id="button_send" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../pics/send.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+            <padding>
+                <Insets left="30.0" top="20.0" />
+            </padding>
+        </HBox>
+    </children>
+</AnchorPane>
